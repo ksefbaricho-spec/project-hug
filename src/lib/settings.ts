@@ -7,9 +7,7 @@ export type ModelId =
   | "google/gemini-2.5-flash"
   | "google/gemini-2.5-pro"
   | "openai/gpt-5-mini"
-  | "openai/gpt-5"
-  | "anthropic/claude-3-5-haiku-latest"
-  | "anthropic/claude-3-5-sonnet-latest";
+  | "openai/gpt-5";
 
 export type OS = "linux" | "windows" | "macos";
 
