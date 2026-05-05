@@ -161,7 +161,6 @@ export async function streamChat({
   onDone,
   onError,
   signal,
-  _isFallback,
 }: {
   messages: { role: Role; content: string }[];
   model?: string;
@@ -170,7 +169,6 @@ export async function streamChat({
   onDone: () => void;
   onError: (err: string) => void;
   signal?: AbortSignal;
-  _isFallback?: boolean;
 }) {
   try {
     const resp = await fetch(`${PROJECT_URL}/functions/v1/chat`, {
